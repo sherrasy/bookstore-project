@@ -24,7 +24,7 @@ header #header_text {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   text-align: start;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 header button {
@@ -180,5 +180,83 @@ main .profile_about .profile_about_statistic #profile_about_statistic_followers_
   font-size: 20px;
   margin-right: 80px;
   margin-bottom: 15px;
+}
+
+main .genres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30px 45px;
+      grid-template-rows: 30px 45px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-left: 20px;
+}
+
+main .genres #genres_text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  color: #333333;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main .genres .genres_buttons {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+main .genres #genres_buttons_1 {
+  background: -webkit-gradient(linear, left top, right top, from(#53889D), to(#BBD1D9));
+  background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
+}
+
+main .genres #genres_buttons_2 {
+  background: -webkit-gradient(linear, left top, right top, from(#F3A492), to(#D96F6E)), #C4C4C4;
+  background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
+}
+
+main .genres #genres_buttons_3 {
+  background: -webkit-gradient(linear, left top, right top, from(#F2D05C), to(#F3A492));
+  background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
+}
+
+main .genres #genres_buttons_4 {
+  background: -webkit-gradient(linear, left top, right top, from(#F2D05C), to(#F3A492));
+  background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
+}
+
+main .genres #genres_buttons_5 {
+  background: -webkit-gradient(linear, left top, right top, from(#BBD1D9), color-stop(92.86%, #F2D05C));
+  background: linear-gradient(90deg, #BBD1D9 0%, #F2D05C 92.86%);
+}
+
+main .genres #genres_buttons_6 {
+  background: -webkit-gradient(linear, left top, right top, from(#D96F6E), to(#F2D05C));
+  background: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
+}
+
+main .genres #genres_buttons_7 {
+  background: -webkit-gradient(linear, left top, right top, from(#53889D), to(#BBD1D9));
+  background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
+}
+
+main .genres button {
+  border-color: white !important;
+  border-style: none;
+  margin-right: 7px;
+  margin-top: 7px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 6px 18px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=profile_page.css.map */
