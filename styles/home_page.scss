@@ -1,0 +1,42 @@
+.greeting {
+    padding: 20px;
+
+    &__title {
+        font-size: 16px;
+        line-height: 1.15;
+        font-family: 'Playfair Display', serif;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.authors {
+    padding: 20px;
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+    }
+
+    &__profiles {
+        display: grid;
+        overflow-x: auto;
+        scroll-snap-type: x proximity;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+    }
+}
+
+.profile-item {
+    scroll-snap-align: start;
+
+    &__name {
+        font-size: 12px;
+        line-height: 1.25;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
