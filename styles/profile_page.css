@@ -44,8 +44,8 @@ header #header_button_bag {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 360px 180px 300px 500px;
+      grid-template-rows: 360px 180px 300px 500px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
@@ -183,6 +183,12 @@ main .profile_about .profile_about_statistic #profile_about_statistic_followers_
 }
 
 main .genres {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 30px 45px;
@@ -258,5 +264,228 @@ main .genres button {
   font-family: 'Montserrat', sans-serif;
   padding: 6px 18px;
   font-weight: 600;
+}
+
+main .purchased_books {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 40px 310px 20px;
+      grid-template-rows: 40px 310px 20px;
+  margin-left: 20px;
+}
+
+main .purchased_books #books_text_link {
+  text-decoration: none;
+  color: #53889D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+main .purchased_books .purchased_books_link {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+main .purchased_books #purchased_books_link_text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #D96F6E;
+}
+
+main .purchased_books #purchased_books_link_img {
+  position: absolute;
+  left: 297px;
+  margin-top: 3px;
+}
+
+main .purchased_books #purchased_books_text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  color: #333333;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main .purchased_books .purchased_books_container {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 280px;
+      grid-template-rows: 280px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .purchased_books .purchased_books_container .purchased_books_container_book_1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 195px 60px 16px;
+      grid-template-rows: 195px 60px 16px;
+  -ms-grid-columns: 128.79px;
+      grid-template-columns: 128.79px;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_1_img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_1_title {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_1_author {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #4F4F4F;
+}
+
+main .purchased_books .purchased_books_container .purchased_books_container_book_2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 195px 60px 16px;
+      grid-template-rows: 195px 60px 16px;
+  -ms-grid-columns: 129.72px;
+      grid-template-columns: 129.72px;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_2_img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_2_title {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_2_author {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #4F4F4F;
+}
+
+main .purchased_books .purchased_books_container .purchased_books_container_book_3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 195px 60px 16px;
+      grid-template-rows: 195px 60px 16px;
+  -ms-grid-columns: 63.89px;
+      grid-template-columns: 63.89px;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_3_img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_3_title {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .purchased_books .purchased_books_container #purchased_books_container_book_3_author {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #4F4F4F;
 }
 /*# sourceMappingURL=profile_page.css.map */
