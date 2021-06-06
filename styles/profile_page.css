@@ -304,10 +304,44 @@ main .purchased_books #purchased_books_link_text {
   color: #D96F6E;
 }
 
-main .purchased_books #purchased_books_link_img {
-  position: absolute;
-  left: 297px;
-  margin-top: 3px;
+@media screen and (max-width: 414px) {
+  main .purchased_books #purchased_books_link_img {
+    position: absolute;
+    left: 297px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  main .purchased_books #purchased_books_link_img {
+    position: absolute;
+    left: 295px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main .purchased_books #purchased_books_link_img {
+    position: absolute;
+    left: 276px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main .purchased_books #purchased_books_link_img {
+    position: absolute;
+    left: 268px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .purchased_books #purchased_books_link_img {
+    position: absolute;
+    left: 268px;
+    margin-top: 3px;
+  }
 }
 
 main .purchased_books #purchased_books_text {

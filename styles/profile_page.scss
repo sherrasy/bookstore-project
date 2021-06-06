@@ -212,12 +212,45 @@ main {
             color: #D96F6E;
         }
 
-        #purchased_books_link_img {
-            position: absolute;
-            left: 297px;
-            margin-top: 3px;
+        @media screen and (max-width:414px) {
+            #purchased_books_link_img {
+                position: absolute;
+                left: 297px;
+                margin-top: 3px;
+            }
         }
 
+        @media screen and (max-width:411px) {
+            #purchased_books_link_img {
+                position: absolute;
+                left: 295px;
+                margin-top: 3px;
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            #purchased_books_link_img {
+                position: absolute;
+                left: 276px;
+                margin-top: 3px;
+            }
+        }
+
+        @media screen and (max-width:360px) {
+            #purchased_books_link_img {
+                position: absolute;
+                left: 268px;
+                margin-top: 3px;
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            #purchased_books_link_img {
+                position: absolute;
+                left: 268px;
+                margin-top: 3px;
+            }
+        }
 
         #purchased_books_text {
             grid-row: 1/2;
@@ -328,5 +361,3 @@ main {
         }
     }
 }
-
-/*пример*/
