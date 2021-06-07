@@ -215,7 +215,7 @@ main {
         @media screen and (max-width:414px) {
             #purchased_books_link_container_img {
                 position: absolute;
-                left: 297px;
+                left: 295px;
                 margin-top: 3px;
             }
         }
@@ -247,7 +247,7 @@ main {
         @media screen and (max-width:320px) {
             #purchased_books_link_container_img {
                 position: absolute;
-                left: 268px;
+                left: 267px;
                 margin-top: 3px;
             }
         }
@@ -361,41 +361,188 @@ main {
         }
     }
 
-    .wishlist {
-        grid-row: 4/5;
-        grid-column: 1/2;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 40px 330px;
-        margin-left: 20px;
-        margin-right: 20px;
 
-        #wishlist_text {
-            grid-row: 1/2;
-            grid-column: 1/2;
-            color: #333333;
-            font-weight: 800;
-            font-size: 16px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        #wishlist_text_link {
-            text-decoration: none;
-            color: #53889D;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            font-weight: 100;
-        }
-
-        .wishlist_container {
-            grid-row: 2/3;
+    @media screen and (max-width:360px) {
+        .wishlist {
+            grid-row: 4/5;
             grid-column: 1/2;
             display: grid;
-            grid-template-columns: 104px 104px 104px;
-            grid-template-rows: 160px 160px;
-            justify-content: space-around;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40px 350px 20px;
+            margin-left: 20px;
 
-            @media screen and (min-width:411px) and (max-width:414px) {
+            #wishlist_text {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                color: #333333;
+                font-weight: 800;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            #wishlist_text_link {
+                text-decoration: none;
+                color: #53889D;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: 100;
+            }
+
+            .wishlist_container {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                display: grid;
+                grid-template-columns: 104px 104px 104px;
+                grid-template-rows: 160px 160px;
+                justify-content: space-around;
+
+                #wishlist_container_img_book4 {
+                    margin-top: 5px;
+                }
+
+                #wishlist_container_img_book5 {
+                    margin-top: -18px;
+                }
+
+                #wishlist_container_img_book6 {
+                    margin-top: -4px;
+                }
+            }
+
+            .wishlist_link_container {
+                grid-row: 3/4;
+                text-align: center;
+            }
+
+            #wishlist_link_container_text {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                color: #D96F6E;
+            }
+
+            @media screen and (max-width:360px) {
+                #wishlist_link_container_img {
+                    position: absolute;
+                    left: 260px;
+                    margin-top: 3px;
+                }
+            }
+
+            @media screen and (max-width:320px) {
+                #wishlist_link_container_img {
+                    position: absolute;
+                    left: 260px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:375px) and (min-width:365px) {
+        .wishlist {
+            grid-row: 4/5;
+            grid-column: 1/2;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40px 350px 20px;
+            margin-left: 20px;
+
+            #wishlist_text {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                color: #333333;
+                font-weight: 800;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            #wishlist_text_link {
+                text-decoration: none;
+                color: #53889D;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: 100;
+            }
+
+            .wishlist_container {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                display: grid;
+                grid-template-columns: 104px 104px 104px;
+                grid-template-rows: 160px 160px;
+                justify-content: space-around;
+
+                #wishlist_container_img_book4 {
+                    margin-top: 10px;
+                }
+
+                #wishlist_container_img_book5 {
+                    margin-top: -14px;
+                }
+
+                #wishlist_container_img_book6 {
+                    margin-top: -1px;
+                }
+            }
+
+            .wishlist_link_container {
+                grid-row: 3/4;
+                text-align: center;
+            }
+
+            #wishlist_link_container_text {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                color: #D96F6E;
+            }
+
+            @media screen and (max-width:375px) {
+                #wishlist_link_container_img {
+                    position: absolute;
+                    left: 268px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:411px) and (max-width:414px) {
+        .wishlist {
+            grid-row: 4/5;
+            grid-column: 1/2;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40px 360px 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            #wishlist_text {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                color: #333333;
+                font-weight: 800;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            #wishlist_text_link {
+                text-decoration: none;
+                color: #53889D;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: 100;
+            }
+
+            .wishlist_container {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                display: grid;
+                grid-template-columns: 104px 104px 104px;
+                grid-template-rows: 160px 160px;
+                justify-content: space-around;
+
                 #wishlist_container_img_book4 {
                     margin-top: 13px;
                 }
@@ -409,6 +556,33 @@ main {
                 }
             }
 
+            .wishlist_link_container {
+                grid-row: 3/4;
+                text-align: center;
+            }
+
+            #wishlist_link_container_text {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                color: #D96F6E;
+            }
+
+            @media screen and (max-width:414px) {
+                #wishlist_link_container_img {
+                    position: absolute;
+                    left: 278px;
+                    margin-top: 3px;
+                }
+            }
+
+            @media screen and (max-width:411px) {
+                #wishlist_link_container_img {
+                    position: absolute;
+                    left: 277px;
+                    margin-top: 3px;
+                }
+            }
         }
 
     }

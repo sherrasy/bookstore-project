@@ -307,7 +307,7 @@ main .purchased_books #purchased_books_link_container_text {
 @media screen and (max-width: 414px) {
   main .purchased_books #purchased_books_link_container_img {
     position: absolute;
-    left: 297px;
+    left: 295px;
     margin-top: 3px;
   }
 }
@@ -339,7 +339,7 @@ main .purchased_books #purchased_books_link_container_text {
 @media screen and (max-width: 320px) {
   main .purchased_books #purchased_books_link_container_img {
     position: absolute;
-    left: 268px;
+    left: 267px;
     margin-top: 3px;
   }
 }
@@ -523,62 +523,230 @@ main .purchased_books .purchased_books_container #purchased_books_container_book
   color: #4F4F4F;
 }
 
-main .wishlist {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 40px 330px;
-      grid-template-rows: 40px 330px;
-  margin-left: 20px;
-  margin-right: 20px;
+@media screen and (max-width: 360px) {
+  main .wishlist {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40px 350px 20px;
+        grid-template-rows: 40px 350px 20px;
+    margin-left: 20px;
+  }
+  main .wishlist #wishlist_text {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    color: #333333;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  main .wishlist #wishlist_text_link {
+    text-decoration: none;
+    color: #53889D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  main .wishlist .wishlist_container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 104px 104px 104px;
+        grid-template-columns: 104px 104px 104px;
+    -ms-grid-rows: 160px 160px;
+        grid-template-rows: 160px 160px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .wishlist .wishlist_container #wishlist_container_img_book4 {
+    margin-top: 5px;
+  }
+  main .wishlist .wishlist_container #wishlist_container_img_book5 {
+    margin-top: -18px;
+  }
+  main .wishlist .wishlist_container #wishlist_container_img_book6 {
+    margin-top: -4px;
+  }
+  main .wishlist .wishlist_link_container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  main .wishlist #wishlist_link_container_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #D96F6E;
+  }
 }
 
-main .wishlist #wishlist_text {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  color: #333333;
-  font-weight: 800;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+@media screen and (max-width: 360px) and (max-width: 360px) {
+  main .wishlist #wishlist_link_container_img {
+    position: absolute;
+    left: 260px;
+    margin-top: 3px;
+  }
 }
 
-main .wishlist #wishlist_text_link {
-  text-decoration: none;
-  color: #53889D;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 100;
+@media screen and (max-width: 360px) and (max-width: 320px) {
+  main .wishlist #wishlist_link_container_img {
+    position: absolute;
+    left: 260px;
+    margin-top: 3px;
+  }
 }
 
-main .wishlist .wishlist_container {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 104px 104px 104px;
-      grid-template-columns: 104px 104px 104px;
-  -ms-grid-rows: 160px 160px;
-      grid-template-rows: 160px 160px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+@media screen and (max-width: 375px) and (min-width: 365px) {
+  main .wishlist {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40px 350px 20px;
+        grid-template-rows: 40px 350px 20px;
+    margin-left: 20px;
+  }
+  main .wishlist #wishlist_text {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    color: #333333;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  main .wishlist #wishlist_text_link {
+    text-decoration: none;
+    color: #53889D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  main .wishlist .wishlist_container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 104px 104px 104px;
+        grid-template-columns: 104px 104px 104px;
+    -ms-grid-rows: 160px 160px;
+        grid-template-rows: 160px 160px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .wishlist .wishlist_container #wishlist_container_img_book4 {
+    margin-top: 10px;
+  }
+  main .wishlist .wishlist_container #wishlist_container_img_book5 {
+    margin-top: -14px;
+  }
+  main .wishlist .wishlist_container #wishlist_container_img_book6 {
+    margin-top: -1px;
+  }
+  main .wishlist .wishlist_link_container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  main .wishlist #wishlist_link_container_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #D96F6E;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 365px) and (max-width: 375px) {
+  main .wishlist #wishlist_link_container_img {
+    position: absolute;
+    left: 268px;
+    margin-top: 3px;
+  }
 }
 
 @media screen and (min-width: 411px) and (max-width: 414px) {
+  main .wishlist {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40px 360px 20px;
+        grid-template-rows: 40px 360px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main .wishlist #wishlist_text {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    color: #333333;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  main .wishlist #wishlist_text_link {
+    text-decoration: none;
+    color: #53889D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  main .wishlist .wishlist_container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 104px 104px 104px;
+        grid-template-columns: 104px 104px 104px;
+    -ms-grid-rows: 160px 160px;
+        grid-template-rows: 160px 160px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   main .wishlist .wishlist_container #wishlist_container_img_book4 {
     margin-top: 13px;
   }
@@ -587,6 +755,34 @@ main .wishlist .wishlist_container {
   }
   main .wishlist .wishlist_container #wishlist_container_img_book6 {
     margin-top: 2px;
+  }
+  main .wishlist .wishlist_link_container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  main .wishlist #wishlist_link_container_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #D96F6E;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 414px) and (max-width: 414px) {
+  main .wishlist #wishlist_link_container_img {
+    position: absolute;
+    left: 278px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 414px) and (max-width: 411px) {
+  main .wishlist #wishlist_link_container_img {
+    position: absolute;
+    left: 277px;
+    margin-top: 3px;
   }
 }
 /*# sourceMappingURL=profile_page.css.map */
