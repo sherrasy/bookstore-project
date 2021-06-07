@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.footer_link {
+    color: #53889D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    align-self: center;
+}
+
+.footer_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
