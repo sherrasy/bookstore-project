@@ -1,15 +1,9 @@
 header {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 8vh;
-      grid-template-rows: 8vh;
-  -ms-grid-columns: 1fr 0.1fr 0.1fr;
-      grid-template-columns: 1fr 0.1fr 0.1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
-          box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
+  grid-template-rows: 8vh;
+  grid-template-columns: 1fr 0.1fr 0.1fr;
+  align-items: center;
+  box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
 }
 
 header #header_button_back {
@@ -17,8 +11,8 @@ header #header_button_back {
 }
 
 header button {
-  border-color: white !important;
-  background-color: white !important;
+  border-color: #FFFFFF !important;
+  background-color: #FFFFFF !important;
   border-style: none;
 }
 
@@ -31,33 +25,28 @@ header #header_button_bag {
 }
 
 .wrapper {
-  display: -ms-grid;
   display: grid;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .wrapper__container-1 {
   margin-top: 5%;
-  display: -ms-grid;
   display: grid;
   justify-items: center;
 }
 
 @media screen and (max-width: 320px) {
   .wrapper__container-1 {
-    -ms-grid-rows: 13.5em 5em 2em 1.2em 3em 6em;
-        grid-template-rows: 13.5em 5em 2em 1.2em 3em 6em;
+    grid-template-rows: 13.5em 5em 2em 1.2em 3em 6em;
   }
 }
 
 @media screen and (min-width: 321px) {
   .wrapper__container-1 {
-    -ms-grid-rows: 13.5em 2.5em 2em 1.2em 3em 7em;
-        grid-template-rows: 13.5em 2.5em 2em 1.2em 3em 7em;
+    grid-template-rows: 13.5em 2.5em 2em 1.2em 3em 7em;
   }
 }
 
@@ -70,58 +59,67 @@ header #header_button_bag {
   max-width: 100%;
 }
 
-.wrapper__container-1__text-book-title, .wrapper__container-1__text-price {
+.wrapper__container-1__text-book-title,
+.wrapper__container-1__text-price {
   text-align: center;
   font-size: 1.563em;
-  font-family: 'Playfair Display', 'serif';
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   color: black;
 }
 
 .wrapper__container-1__text-edition {
-  font-family: 'Montserrat', 'serif';
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75em;
   font-weight: 400;
   color: #828282;
 }
 
 @media screen and (max-width: 320px) {
-  .wrapper__container-1__text-author, .wrapper__container-1__text-about {
-    font-family: 'Montserrat', 'serif';
+
+  .wrapper__container-1__text-author,
+  .wrapper__container-1__text-about {
+    font-family: "Montserrat", sans-serif;
     font-size: 0.9em;
     font-weight: 400;
     line-height: 1.5em;
   }
-  .wrapper__container-1__text-author__link, .wrapper__container-1__text-about__link {
+
+  .wrapper__container-1__text-author__link,
+  .wrapper__container-1__text-about__link {
     color: #53889D;
   }
 }
 
 @media screen and (min-width: 321px) {
-  .wrapper__container-1__text-author, .wrapper__container-1__text-about {
-    font-family: 'Montserrat', 'serif';
+
+  .wrapper__container-1__text-author,
+  .wrapper__container-1__text-about {
+    font-family: "Montserrat", sans-serif;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5em;
   }
-  .wrapper__container-1__text-author__link, .wrapper__container-1__text-about__link {
+
+  .wrapper__container-1__text-author__link,
+  .wrapper__container-1__text-about__link {
     color: #53889D;
   }
 }
 
 .wrapper__container-2 {
-  display: -ms-grid;
   display: grid;
   height: 30%;
   justify-items: center;
 }
 
-.wrapper__container-2__btn-add-to-cart, .wrapper__container-2__btn-wishlist {
+.wrapper__container-2__btn-add-to-cart,
+.wrapper__container-2__btn-wishlist {
   border: none;
   border-radius: 0.5em;
   text-transform: uppercase;
-  color: white;
-  font-family: 'Montserrat', 'serif';
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 600;
   height: 2.5em;
@@ -129,16 +127,16 @@ header #header_button_bag {
 }
 
 .wrapper__container-2__btn-add-to-cart {
-  background-color: #d96f6e;
+  background-color: #D96F6E;
 }
 
 .wrapper__container-2__btn-wishlist {
-  background-color: #f3a492;
+  background-color: #F3A492;
   margin-top: 0.5em;
 }
 
 .wrapper__container-2__text-publisher {
-  font-family: 'Montserrat', 'serif';
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75em;
   font-weight: 400;
   color: #828282;
@@ -151,39 +149,36 @@ header #header_button_bag {
 }
 
 .wrapper__container-2__text-genres-box__text {
-  font-family: 'Montserrat', 'serif';
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 700;
-  color: #4f4f4f;
+  color: #4F4F4F;
 }
 
 .wrapper__container-2__btns {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.625em;
 }
 
 .wrapper__container-2__btns__today {
   height: 2em;
   width: 11em;
-  background: -webkit-gradient(linear, left top, right top, from(#F2D05C), to(#F3A492));
   background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
 }
 
 .wrapper__container-2__btns__fiction {
   height: 2em;
   width: 12em;
-  background: -webkit-gradient(linear, left top, right top, from(#53889D), to(#BBD1D9));
   background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
 }
 
-.wrapper__container-2__btns__today, .wrapper__container-2__btns__fiction {
-  font-family: 'Montserrat', 'serif';
+.wrapper__container-2__btns__today,
+.wrapper__container-2__btns__fiction {
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75em;
   font-weight: 700;
-  color: white;
+  color: #FFFFFF;
   border-radius: 0.5em;
   border: none;
 }
@@ -193,31 +188,27 @@ header #header_button_bag {
 }
 
 .wrapper__container-2__text-share-box__text {
-  font-family: 'Montserrat', 'serif';
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 700;
-  color: #4f4f4f;
+  color: #4F4F4F;
 }
 
 .wrapper__container-2__icons-social {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
   gap: 1.25em;
 }
 
 .wrapper .container-3 {
   margin-top: 0.5em;
   margin-bottom: 2em;
-  display: -ms-grid;
   display: grid;
 }
 
 .wrapper .container-3__text-title {
-  font-family: 'Playfair Display', 'serif';
+  font-family: "Playfair Display", serif;
   font-size: 1.25em;
   font-weight: 700;
   color: black;
@@ -225,13 +216,10 @@ header #header_button_bag {
 }
 
 .wrapper .container-3__books {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   overflow-x: auto;
-  -ms-scroll-snap-type: x proximity;
-      scroll-snap-type: x proximity;
+  scroll-snap-type: x proximity;
   max-width: 90vw;
   margin-left: 15px;
 }
@@ -242,14 +230,14 @@ header #header_button_bag {
 }
 
 .wrapper .container-3__books__item__name {
-  font-family: 'Playfair Display', 'serif';
+  font-family: "Playfair Display", serif;
   font-size: 1em;
   font-weight: 700;
   color: black;
 }
 
 .wrapper .container-3__books__item__author {
-  font-family: 'Montserrat', 'serif';
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75em;
   font-weight: 400;
   color: #828282;
@@ -257,10 +245,11 @@ header #header_button_bag {
 }
 
 .wrapper .container-3__books__item__price {
-  font-family: 'Montserrat', 'serif';
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75em;
   font-weight: 600;
-  color: #d96f6e;
+  color: #D96F6E;
   margin-top: -9px;
 }
+
 /*# sourceMappingURL=book_page.css.map */
