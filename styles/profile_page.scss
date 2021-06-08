@@ -35,15 +35,15 @@ main {
     display: grid;
 
     @media screen and (max-width:375px) {
-        grid-template-rows: 360px 180px 385px 500px;
+        grid-template-rows: 360px 180px 385px 430px;
     }
 
     @media screen and (max-width:414px) and (min-width:376px) {
-        grid-template-rows: 360px 180px 390px 500px;
+        grid-template-rows: 360px 180px 390px 450px;
     }
 
     @media screen and (min-width:415px) {
-        grid-template-rows: 360px 180px 395px 500px;
+        grid-template-rows: 360px 180px 395px 450px;
     }
 
     grid-template-columns: 1fr;
