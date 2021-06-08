@@ -259,7 +259,7 @@ main {
                 color: #D96F6E;
             }
 
-            @media screen and (max-width:414px) {
+            @media screen and (max-width:414px) and (min-width:412px) {
                 #purchased_books_link_container_img {
                     position: absolute;
                     left: 295px;
@@ -267,7 +267,7 @@ main {
                 }
             }
 
-            @media screen and (max-width:411px) {
+            @media screen and (max-width:411px) and (min-width:376px) {
                 #purchased_books_link_container_img {
                     position: absolute;
                     left: 295px;
@@ -275,7 +275,7 @@ main {
                 }
             }
 
-            @media screen and (max-width:375px) {
+            @media screen and (max-width:375px) and (min-width:361px) {
                 #purchased_books_link_container_img {
                     position: absolute;
                     left: 276px;
@@ -283,7 +283,7 @@ main {
                 }
             }
 
-            @media screen and (max-width:360px) {
+            @media screen and (max-width:360px) and (min-width:321px) {
                 #purchased_books_link_container_img {
                     position: absolute;
                     left: 268px;

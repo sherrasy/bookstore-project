@@ -13,7 +13,7 @@ header {
 }
 
 header #header_text {
-  font-size: 16px;
+  font-size: 1em;
   color: #4F4F4F;
   font-family: 'Montserrat', sans-serif;
   margin-left: 25px;
@@ -104,7 +104,7 @@ main .profile_about #profile_about_name {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  font-size: 31.25px;
+  font-size: 1.953em;
   font-family: 'Playfair Display', serif;
   justify-items: center;
 }
@@ -118,7 +118,7 @@ main .profile_about #profile_about_place {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  font-size: 10px;
+  font-size: 0.625em;
   font-family: 'Montserrat', sans-serif;
   color: #828282;
   letter-spacing: 0.16em;
@@ -150,7 +150,7 @@ main .profile_about .profile_about_statistic #profile_about_statistic_following 
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
+  font-size: 0.625em;
   margin-left: 80px;
 }
 
@@ -163,7 +163,7 @@ main .profile_about .profile_about_statistic #profile_about_statistic_following_
   grid-column: 1/2;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   margin-left: 80px;
   margin-bottom: 15px;
 }
@@ -189,7 +189,7 @@ main .profile_about .profile_about_statistic #profile_about_statistic_followers_
   grid-column: 2/3;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   margin-right: 80px;
   margin-bottom: 15px;
 }
@@ -219,7 +219,7 @@ main .genres #genres_text {
   grid-column: 1/2;
   color: #333333;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -272,7 +272,7 @@ main .genres button {
   border-radius: 8px;
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75em;
   font-family: 'Montserrat', sans-serif;
   padding: 6px 18px;
   font-weight: 600;
@@ -294,7 +294,7 @@ main .purchased_books #purchased_books_text {
   grid-row: 1/2;
   color: #333333;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -302,7 +302,7 @@ main .purchased_books #purchased_books_text #purchased_books_text_link {
   text-decoration: none;
   color: #53889D;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 100;
 }
 
@@ -333,7 +333,7 @@ main .purchased_books .purchased_books_container .purchased_books_container_item
   margin-top: 7px;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1em;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: end;
@@ -344,7 +344,7 @@ main .purchased_books .purchased_books_container .purchased_books_container_item
 main .purchased_books .purchased_books_container .purchased_books_container_item .purchased_books_container_item_author {
   margin-top: 2px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
   color: #4F4F4F;
 }
 
@@ -358,11 +358,11 @@ main .purchased_books .purchased_books_link_container {
 main .purchased_books .purchased_books_link_container #purchased_books_link_container_text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75em;
   color: #D96F6E;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) and (min-width: 412px) {
   main .purchased_books .purchased_books_link_container #purchased_books_link_container_img {
     position: absolute;
     left: 295px;
@@ -370,7 +370,7 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
   }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 411px) and (min-width: 376px) {
   main .purchased_books .purchased_books_link_container #purchased_books_link_container_img {
     position: absolute;
     left: 295px;
@@ -378,7 +378,7 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (min-width: 361px) {
   main .purchased_books .purchased_books_link_container #purchased_books_link_container_img {
     position: absolute;
     left: 276px;
@@ -386,7 +386,7 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) and (min-width: 321px) {
   main .purchased_books .purchased_books_link_container #purchased_books_link_container_img {
     position: absolute;
     left: 268px;
@@ -426,14 +426,14 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
     grid-column: 1/2;
     color: #333333;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
   }
   main .wishlist #wishlist_text_link {
     text-decoration: none;
     color: #53889D;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 100;
   }
   main .wishlist .wishlist_container {
@@ -470,7 +470,7 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
   main .wishlist #wishlist_link_container_text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75em;
     color: #D96F6E;
   }
   main .wishlist #wishlist_link_container_img {
@@ -505,14 +505,14 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
     grid-column: 1/2;
     color: #333333;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
   }
   main .wishlist #wishlist_text_link {
     text-decoration: none;
     color: #53889D;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 100;
   }
   main .wishlist .wishlist_container {
@@ -549,7 +549,7 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
   main .wishlist #wishlist_link_container_text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75em;
     color: #D96F6E;
   }
 }
@@ -595,14 +595,14 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
     grid-column: 1/2;
     color: #333333;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
   }
   main .wishlist #wishlist_text_link {
     text-decoration: none;
     color: #53889D;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 100;
   }
   main .wishlist .wishlist_container {
@@ -639,7 +639,7 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
   main .wishlist #wishlist_link_container_text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75em;
     color: #D96F6E;
   }
 }
@@ -678,14 +678,14 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
     grid-column: 1/2;
     color: #333333;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
   }
   main .wishlist #wishlist_text_link {
     text-decoration: none;
     color: #53889D;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 100;
   }
   main .wishlist .wishlist_container {
@@ -722,7 +722,7 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
   main .wishlist #wishlist_link_container_text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75em;
     color: #D96F6E;
   }
 }
