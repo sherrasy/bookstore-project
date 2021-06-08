@@ -1,176 +1,228 @@
 header {
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 8vh;
-  grid-template-columns: 1fr 0.1fr 0.1fr;
-  align-items: center;
-  box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
+  -ms-grid-rows: 8vh;
+      grid-template-rows: 8vh;
+  -ms-grid-columns: 1fr 0.1fr 0.1fr;
+      grid-template-columns: 1fr 0.1fr 0.1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
+          box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
 }
+
 header #header_button_back {
   margin-left: 10%;
 }
+
 header button {
   border-color: white !important;
   background-color: white !important;
   border-style: none;
 }
+
 header #header_button_loupe {
   margin-right: 25px;
 }
+
 header #header_button_bag {
   margin-right: 25px;
 }
 
 .wrapper {
+  display: -ms-grid;
   display: grid;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 .wrapper .container-1 {
   margin-top: 5%;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 1fr repeat(5, 0.1fr);
+  -ms-grid-rows: 1fr (0.1fr)[5];
+      grid-template-rows: 1fr repeat(5, 0.1fr);
   justify-items: center;
 }
+
 .wrapper .container-1 .container-1__pic-box {
   width: 100%;
   text-align: center;
 }
+
 .wrapper .container-1 .container-1__pic-box .container-1__pic-book-1 {
   max-width: 100%;
 }
+
 .wrapper .container-1 .container-1__text-book-title,
 .wrapper .container-1 .container-1__text-price {
   font-size: 1.563em;
-  font-family: "Playfair Display", "serif";
+  font-family: 'Playfair Display', 'serif';
   font-weight: 700;
   color: black;
 }
+
 .wrapper .container-1 .container-1__text-edition {
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 0.75em;
   font-weight: 400;
   color: #828282;
 }
+
 .wrapper .container-1 .container-1__text-author-box,
 .wrapper .container-1 .container-1__text-about {
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 1em;
   font-weight: 400;
 }
+
 .wrapper .container-1 .container-1__text-about {
   line-height: 1.5em;
 }
+
 .wrapper .container-2 {
+  display: -ms-grid;
   display: grid;
   height: 30%;
   justify-items: center;
 }
+
 .wrapper .container-2 .container-2__btn-add-to-cart,
 .wrapper .container-2 .container-2__btn-wishlist {
   border: none;
   border-radius: 0.5em;
   text-transform: uppercase;
   color: white;
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 1em;
   font-weight: 600;
   height: 2.5em;
   width: 18.5em;
 }
+
 .wrapper .container-2 .container-2__btn-add-to-cart {
   background-color: #d96f6e;
 }
+
 .wrapper .container-2 .container-2__btn-wishlist {
   background-color: #f3a492;
   margin-top: 0.5em;
 }
+
 .wrapper .container-2 .container-2__text-publisher {
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 0.75em;
   font-weight: 400;
   color: #828282;
 }
+
 .wrapper .container-2 .container-2__text-genres,
 .wrapper .container-2 .container-2__text-share {
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 1em;
   font-weight: 700;
   color: #4f4f4f;
 }
+
 .wrapper .container-2 .container-2__text-genres-box {
   margin-bottom: -1.5em;
 }
+
 .wrapper .container-2 .container-2__btns {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 0.625em;
 }
+
 .wrapper .container-2 .container-2__btns .container-2__btns-today {
   height: 2em;
   width: 11em;
+  background: -webkit-gradient(linear, left top, right top, from(#F2D05C), to(#F3A492));
   background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
 }
+
 .wrapper .container-2 .container-2__btns .container-2__btns-fiction {
   height: 2em;
   width: 12em;
+  background: -webkit-gradient(linear, left top, right top, from(#53889D), to(#BBD1D9));
   background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
 }
+
 .wrapper .container-2 .container-2__btns .container-2__btns-today,
 .wrapper .container-2 .container-2__btns .container-2__btns-fiction {
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 0.75em;
   font-weight: 700;
   color: white;
   border-radius: 0.5em;
   border: none;
 }
+
 .wrapper .container-2 .container-2__text-share-box {
   margin-bottom: -1.5em;
 }
+
 .wrapper .container-2 .container-2__icons-social {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 1.25em;
 }
+
 .wrapper .container-3 {
+  display: -ms-grid;
   display: grid;
   justify-items: center;
 }
+
 .wrapper .container-3 .container-3__text-title,
 .wrapper .container-3 .container-3__books-1-name,
 .wrapper .container-3 .container-3__books-2-name,
 .wrapper .container-3 .container-3__books-3-name {
-  font-family: "Playfair Display", "serif";
+  font-family: 'Playfair Display', 'serif';
   font-size: 1em;
   font-weight: 700;
   color: black;
 }
+
 .wrapper .container-3 .container-3__text-title {
   font-size: 1.25em;
 }
+
 .wrapper .container-3 .container-3__books {
+  display: -ms-grid;
   display: grid;
   gap: 0.5em;
   height: 30%;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   margin-left: 6em;
 }
+
 .wrapper .container-3 .container-3__books-1-author,
 .wrapper .container-3 .container-3__books-2-author,
 .wrapper .container-3 .container-3__books-3-author {
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 0.75;
   font-weight: 400;
   color: #828282;
 }
+
 .wrapper .container-3 .container-3__books-1-price,
 .wrapper .container-3 .container-3__books-2-price,
 .wrapper .container-3 .container-3__books-3-price {
-  font-family: "Montserrat", "serif";
+  font-family: 'Montserrat', 'serif';
   font-size: 0.75em;
   font-weight: 600;
   color: #d96f6e;
-}/*# sourceMappingURL=book_page.css.map */
+}
+/*# sourceMappingURL=book_page.css.map */
