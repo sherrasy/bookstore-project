@@ -22,7 +22,7 @@
 
         .container-1__text-book-title,
         .container-1__text-price {
-            font-size: 25px;
+            font-size: 1.563em;
             font-family: 'Playfair Display', 'serif';
             font-weight: 700;
             color: rgba(0, 0, 0, 1);
@@ -30,7 +30,7 @@
 
         .container-1__text-edition {
             font-family: 'Montserrat', 'serif';
-            font-size: 12px;
+            font-size: 0.75em;
             font-weight: 400;
             color: rgba(130, 130, 130, 1);
         }
@@ -38,12 +38,12 @@
         .container-1__text-author-box,
         .container-1__text-about {
             font-family: 'Montserrat', 'serif';
-            font-size: 16px;
+            font-size: 1em;
             font-weight: 400;
         }
 
         .container-1__text-about {
-            line-height: 24px;
+            line-height: 1.5em;
         }
 
 
@@ -61,7 +61,7 @@
             text-transform: uppercase;
             color: rgba(255, 255, 255, 1);
             font-family: 'Montserrat', 'serif';
-            font-size: 16px;
+            font-size: 1em;
             font-weight: 600;
             height: 2.5em;
             width: 18.5em;
@@ -81,7 +81,7 @@
 
         .container-2__text-publisher {
             font-family: 'Montserrat', 'serif';
-            font-size: 12px;
+            font-size: 0.75em;
             font-weight: 400;
             color: rgba(130, 130, 130, 1);
         }
@@ -90,7 +90,7 @@
         .container-2__text-share {
 
             font-family: 'Montserrat', 'serif';
-            font-size: 16px;
+            font-size: 1em;
             font-weight: 700;
             color: rgba(79, 79, 79, 1);
 
@@ -122,7 +122,7 @@
             .container-2__btns-today,
             .container-2__btns-fiction {
                 font-family: 'Montserrat', 'serif';
-                font-size: 12px;
+                font-size: 0.75em;
                 font-weight: 700;
                 color: rgba(255, 255, 255, 1);
                 border-radius: 0.5em;
@@ -156,7 +156,7 @@
         .container-3__books-3-name {
 
             font-family: 'Playfair Display', 'serif';
-            font-size: 16px;
+            font-size: 1em;
             font-weight: 700;
             color: rgba(0, 0, 0, 1);
 
@@ -165,7 +165,7 @@
 
 
         .container-3__text-title {
-            font-size: 20px;
+            font-size: 1.25em;
         }
 
         .container-3__books {
@@ -180,7 +180,7 @@
         .container-3__books-2-author,
         .container-3__books-3-author {
             font-family: 'Montserrat', 'serif';
-            font-size: 12px;
+            font-size: 0.75;
             font-weight: 400;
             color: rgba(130, 130, 130, 1);
         }
@@ -189,7 +189,7 @@
         .container-3__books-2-price,
         .container-3__books-3-price {
             font-family: 'Montserrat', 'serif';
-            font-size: 12px;
+            font-size: 0.75em;
             font-weight: 600;
             color: rgba(217, 111, 110, 1);
 
