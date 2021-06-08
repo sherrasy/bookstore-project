@@ -31,58 +31,84 @@ header {
     margin: 0;
     padding: 0;
 
-    .container-1 {
+    &__container-1 {
         margin-top: 5%;
         display: grid;
-        grid-template-rows: 1fr repeat(5, 0.1fr);
+
+        @media screen and (max-width:320px) {
+            grid-template-rows: 13.5em 5em 2em 1.2em 3em 6em;
+        }
+
+        @media screen and (min-width:321px) {
+            grid-template-rows: 13.5em 2.5em 2em 1.2em 3em 7em;
+        }
+
         justify-items: center;
 
-        .container-1__pic-box {
+        &__pic-box {
             width: 100%;
             text-align: center;
 
-
-            .container-1__pic-book-1 {
+            &__book-1 {
                 max-width: 100%;
             }
         }
 
-        .container-1__text-book-title,
-        .container-1__text-price {
+        &__text-book-title,
+        &__text-price {
+            text-align: center;
             font-size: 1.563em;
             font-family: 'Playfair Display', 'serif';
             font-weight: 700;
             color: rgba(0, 0, 0, 1);
         }
 
-        .container-1__text-edition {
+        &__text-edition {
             font-family: 'Montserrat', 'serif';
             font-size: 0.75em;
             font-weight: 400;
             color: rgba(130, 130, 130, 1);
         }
 
-        .container-1__text-author-box,
-        .container-1__text-about {
-            font-family: 'Montserrat', 'serif';
-            font-size: 1em;
-            font-weight: 400;
+        @media screen and (max-width:320px) {
+
+            &__text-author,
+            &__text-about {
+                font-family: 'Montserrat', 'serif';
+                font-size: 0.9em;
+                font-weight: 400;
+                line-height: 1.5em;
+
+                &__link {
+                    color: #53889D;
+                }
+            }
         }
 
-        .container-1__text-about {
-            line-height: 1.5em;
-        }
+        @media screen and (min-width:321px) {
 
+            &__text-author,
+            &__text-about {
+                font-family: 'Montserrat', 'serif';
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.5em;
+
+                &__link {
+                    color: #53889D;
+                }
+            }
+        }
 
     }
 
-    .container-2 {
+    &__container-2 {
         display: grid;
         height: 30%;
         justify-items: center;
 
-        .container-2__btn-add-to-cart,
-        .container-2__btn-wishlist {
+        &__btn-add-to-cart,
+        &__btn-wishlist {
             border: none;
             border-radius: 0.5em;
             text-transform: uppercase;
@@ -92,62 +118,59 @@ header {
             font-weight: 600;
             height: 2.5em;
             width: 18.5em;
-
         }
 
-
-        .container-2__btn-add-to-cart {
+        &__btn-add-to-cart {
             background-color: rgba(217, 111, 110, 1);
         }
 
-        .container-2__btn-wishlist {
+        &__btn-wishlist {
             background-color: rgba(243, 164, 146, 1);
             margin-top: 0.5em;
 
         }
 
-        .container-2__text-publisher {
+        &__text-publisher {
             font-family: 'Montserrat', 'serif';
             font-size: 0.75em;
             font-weight: 400;
             color: rgba(130, 130, 130, 1);
+            margin-top: 3vh;
         }
 
-        .container-2__text-genres,
-        .container-2__text-share {
-
-            font-family: 'Montserrat', 'serif';
-            font-size: 1em;
-            font-weight: 700;
-            color: rgba(79, 79, 79, 1);
-
-        }
-
-        .container-2__text-genres-box {
+        &__text-genres-box {
             margin-bottom: -1.5em;
+            margin-top: -1.5em;
+
+            &__text {
+                font-family: 'Montserrat', 'serif';
+                font-size: 1em;
+                font-weight: 700;
+                color: rgba(79, 79, 79, 1);
+            }
         }
 
-        .container-2__btns {
+        &__btns {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0.625em;
 
-            .container-2__btns-today {
+            &__today {
                 height: 2em;
                 width: 11em;
                 background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
 
             }
 
-            .container-2__btns-fiction {
+            &__fiction {
                 height: 2em;
                 width: 12em;
                 background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
 
             }
 
-            .container-2__btns-today,
-            .container-2__btns-fiction {
+            &__today,
+            &__fiction {
                 font-family: 'Montserrat', 'serif';
                 font-size: 0.75em;
                 font-weight: 700;
@@ -159,11 +182,18 @@ header {
 
         }
 
-        .container-2__text-share-box {
+        &__text-share-box {
             margin-bottom: -1.5em;
+
+            &__text {
+                font-family: 'Montserrat', 'serif';
+                font-size: 1em;
+                font-weight: 700;
+                color: rgba(79, 79, 79, 1);
+            }
         }
 
-        .container-2__icons-social {
+        &__icons-social {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 1fr;
@@ -173,6 +203,8 @@ header {
     }
 
     .container-3 {
+        margin-top: 0.5em;
+        margin-bottom: 2em;
         display: grid;
 
         &__text-title {
@@ -220,16 +252,5 @@ header {
 
             }
         }
-
-
-        /*
-        .container-3__books {
-            display: grid;
-            gap: 0.5em;
-            height: 30%;
-            grid-template-columns: repeat(3, 1fr);
-            margin-left: 6em;
-        }
-        */
     }
 }
