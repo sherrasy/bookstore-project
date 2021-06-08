@@ -62,6 +62,13 @@ main {
   }
 }
 
+@media screen and (min-width: 415px) {
+  main {
+    -ms-grid-rows: 360px 180px 395px 500px;
+        grid-template-rows: 360px 180px 395px 500px;
+  }
+}
+
 main .profile_about {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -399,6 +406,15 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
     position: absolute;
     left: 248px;
     margin-top: -0.3px;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  main .purchased_books .purchased_books_link_container #purchased_books_link_container_img {
+    display: none;
+  }
+  main .purchased_books .purchased_books_link_container #purchased_books_link_container_text {
+    text-decoration: none;
   }
 }
 
@@ -740,6 +756,73 @@ main .purchased_books .purchased_books_link_container #purchased_books_link_cont
     position: absolute;
     left: 277px;
     margin-top: 3px;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  main .wishlist {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40px 350px 20px;
+        grid-template-rows: 40px 350px 20px;
+  }
+  main .wishlist #wishlist_text {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    color: #333333;
+    font-weight: 800;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+  }
+  main .wishlist #wishlist_text_link {
+    text-decoration: none;
+    color: #53889D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    font-weight: 100;
+  }
+  main .wishlist .wishlist_container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 104px 104px 104px;
+        grid-template-columns: 104px 104px 104px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .wishlist .wishlist_link_container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  main .wishlist #wishlist_link_container_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.75em;
+    color: #D96F6E;
+    text-decoration: none;
+  }
+  main .wishlist #wishlist_link_container_img {
+    display: none;
   }
 }
 /*# sourceMappingURL=profile_page.css.map */

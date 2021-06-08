@@ -42,6 +42,10 @@ main {
         grid-template-rows: 360px 180px 390px 500px;
     }
 
+    @media screen and (min-width:415px) {
+        grid-template-rows: 360px 180px 395px 500px;
+    }
+
     grid-template-columns: 1fr;
 
     .profile_about {
@@ -296,6 +300,16 @@ main {
                     position: absolute;
                     left: 248px;
                     margin-top: -0.3px;
+                }
+            }
+
+            @media screen and (min-width:415px) {
+                #purchased_books_link_container_img {
+                    display: none;
+                }
+
+                #purchased_books_link_container_text {
+                    text-decoration: none;
                 }
             }
         }
@@ -590,5 +604,58 @@ main {
             }
         }
 
+    }
+
+    @media screen and (min-width:415px) {
+        .wishlist {
+            grid-row: 4/5;
+            grid-column: 1/2;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40px 350px 20px;
+
+            #wishlist_text {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                color: #333333;
+                font-weight: 800;
+                font-size: 1em;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 20px;
+            }
+
+            #wishlist_text_link {
+                text-decoration: none;
+                color: #53889D;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 0.75em;
+                font-weight: 100;
+            }
+
+            .wishlist_container {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                display: grid;
+                grid-template-columns: 104px 104px 104px;
+                justify-content: space-around;
+            }
+
+            .wishlist_link_container {
+                grid-row: 3/4;
+                text-align: center;
+            }
+
+            #wishlist_link_container_text {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 0.75em;
+                color: #D96F6E;
+                text-decoration: none;
+            }
+
+            #wishlist_link_container_img {
+                display: none;
+            }
+        }
     }
 }
