@@ -3,6 +3,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     padding: 3%;
+    box-shadow: 0px -4px 16px rgba(78, 55, 55, 0.15);
 }
 
 .footer_link {
