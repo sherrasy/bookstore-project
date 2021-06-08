@@ -31,12 +31,12 @@ header #header_button_bag {
   padding: 20px;
 }
 .greeting__title {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.15;
   font-family: "Playfair Display", serif;
 }
 .greeting__text {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
 }
@@ -75,7 +75,7 @@ header #header_button_bag {
   scroll-snap-align: start;
 }
 .profile-item__name {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.25;
   font-family: "Montserrat", sans-serif;
 }
@@ -99,12 +99,12 @@ header #header_button_bag {
   align-self: stretch;
 }
 .book-item__name {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
   font-family: "Playfair Display", serif;
 }
 .book-item__author {
-  font-size: 12px;
+  font-size: 0.75em;
   font-family: "Montserrat", sans-serif;
   color: #4F4F4F;
 }
@@ -140,7 +140,7 @@ a:hover {
 }
 .genre-item__name {
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.25;
   font-family: "Montserrat", sans-serif;
   color: #4F4F4F;
