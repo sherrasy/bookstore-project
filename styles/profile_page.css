@@ -371,6 +371,7 @@ main .purchased_books__link_container__text {
   font-weight: 600;
   font-size: 0.75em;
   color: #D96F6E;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 414px) and (min-width: 412px) {
@@ -492,6 +493,7 @@ main .purchased_books__link_container__text {
     font-weight: 600;
     font-size: 0.75em;
     color: #D96F6E;
+    text-decoration: underline;
   }
   main .wishlist__link_container__img {
     position: absolute;
@@ -571,6 +573,7 @@ main .purchased_books__link_container__text {
     font-weight: 600;
     font-size: 0.75em;
     color: #D96F6E;
+    text-decoration: underline;
   }
 }
 
@@ -661,6 +664,7 @@ main .purchased_books__link_container__text {
     font-weight: 600;
     font-size: 0.75em;
     color: #D96F6E;
+    text-decoration: underline;
   }
   main .wishlist__link_container__img {
     position: absolute;
@@ -741,6 +745,7 @@ main .purchased_books__link_container__text {
     font-weight: 600;
     font-size: 0.75em;
     color: #D96F6E;
+    text-decoration: underline;
   }
 }
 
