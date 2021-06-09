@@ -15,9 +15,8 @@ header #header_text {
   font-family: "Montserrat", sans-serif;
   margin-left: 25px;
   grid-row: 1/2;
-  grid-column: 1/2;
   text-align: start;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 header button {
