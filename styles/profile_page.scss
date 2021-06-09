@@ -1,24 +1,42 @@
+$blue-color: #53889D;
+$baby-blue-color:#BBD1D9;
+$yellow-color:#F2D05C;
+$soft-pink-color:#F3A492;
+$blush-color:#D96F6E;
+$white-color:#FFFFFF;
+$gray-gradient-color:#C4C4C4;
+$light-gray-color:#828282;
+$dark-gray-color:#333333;
+$header-text-color:#4F4F4F;
+$heading-font:'Montserrat',
+sans-serif;
+$names-font:'Playfair Display',
+serif;
+
 header {
     display: grid;
     grid-template-rows: 8vh;
     grid-template-columns: 1fr 0.1fr 0.1fr;
     align-items: center;
     box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
+    position: sticky;
+    top: 0;
+    background-color: white;
 
     #header_text {
         font-size: 1em;
-        color: #4F4F4F;
-        font-family: 'Montserrat', sans-serif;
+        color: $header-text-color;
+        font-family: $heading-font;
         margin-left: 25px;
         grid-row: 1/2;
         grid-column: 1/2;
         text-align: start;
-        font-weight: 800;
+        font-weight: 700;
     }
 
     button {
-        border-color: white !important;
-        background-color: white !important;
+        border-color: $white-color !important;
+        background-color: $white-color !important;
         border-style: none
     }
 
@@ -69,7 +87,7 @@ main {
             grid-column: 1/2;
             align-items: end;
             font-size: 1.953em;
-            font-family: 'Playfair Display', serif;
+            font-family: $names-font;
             justify-items: center;
         }
 
@@ -78,8 +96,8 @@ main {
             grid-row: 3/4;
             grid-column: 1/2;
             font-size: 0.625em;
-            font-family: 'Montserrat', sans-serif;
-            color: #828282;
+            font-family: $heading-font;
+            color: $light-gray-color;
             letter-spacing: 0.16em;
             justify-items: center;
             align-items: end;
@@ -96,7 +114,7 @@ main {
             &__following {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
                 font-size: 0.625em;
                 margin-left: 80px;
 
@@ -105,7 +123,7 @@ main {
             &__following_count {
                 grid-row: 2/3;
                 grid-column: 1/2;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
                 font-weight: bold;
                 font-size: 1.25em;
                 margin-left: 80px;
@@ -115,7 +133,7 @@ main {
             &__followers {
                 grid-row: 1/2;
                 grid-column: 2/3;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
                 font-size: 10px;
                 margin-right: 80px;
             }
@@ -123,7 +141,7 @@ main {
             &__followers_count {
                 grid-row: 2/3;
                 grid-column: 2/3;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
                 font-weight: bold;
                 font-size: 1.25em;
                 margin-right: 80px;
@@ -143,53 +161,53 @@ main {
         &__text {
             grid-row: 1/2;
             grid-column: 1/2;
-            color: #333333;
+            color: $dark-gray-color;
             font-weight: 800;
             font-size: 1em;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $heading-font;
         }
 
         &__buttons {
             grid-column: 1/2;
 
             &__1 {
-                background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
+                background: linear-gradient(90deg, $blue-color 0%, $baby-blue-color 100%);
             }
 
             &__2 {
-                background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
+                background: linear-gradient(90deg, $soft-pink-color 0%, $blush-color 100%), $gray-gradient-color;
             }
 
             &__3 {
-                background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
+                background: linear-gradient(90deg, $yellow-color 0%, $soft-pink-color 100%);
             }
 
             &__4 {
-                background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
+                background: linear-gradient(90deg, $yellow-color 0%, $soft-pink-color 100%);
             }
 
             &__5 {
-                background: linear-gradient(90deg, #BBD1D9 0%, #F2D05C 92.86%);
+                background: linear-gradient(90deg, $baby-blue-color 0%, $yellow-color 92.86%);
             }
 
             &__6 {
-                background: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
+                background: linear-gradient(90deg, $blush-color 0%, $yellow-color 100%);
             }
 
             &__7 {
-                background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
+                background: linear-gradient(90deg, $blue-color 0%, $baby-blue-color 100%);
             }
 
             button {
-                border-color: white !important;
+                border-color: $white-color !important;
                 border-style: none;
                 margin-right: 7px;
                 margin-top: 7px;
                 border-radius: 8px;
-                color: white;
+                color: $white-color;
                 font-weight: bold;
                 font-size: 0.75em;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
                 padding: 6px 18px;
                 font-weight: 600;
             }
@@ -203,15 +221,15 @@ main {
 
         &__text {
             grid-row: 1/2;
-            color: #333333;
+            color: $dark-gray-color;
             font-weight: 800;
             font-size: 1em;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $heading-font;
 
             &__link {
                 text-decoration: none;
-                color: #53889D;
-                font-family: 'Montserrat', sans-serif;
+                color: $blue-color;
+                font-family: $heading-font;
                 font-size: 0.75em;
                 font-weight: 100;
             }
@@ -235,7 +253,7 @@ main {
 
                 &__title {
                     margin-top: 7px;
-                    font-family: 'Playfair Display', serif;
+                    font-family: $names-font;
                     font-weight: bold;
                     font-size: 1em;
                     display: grid;
@@ -244,9 +262,9 @@ main {
 
                 &__author {
                     margin-top: 2px;
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $heading-font;
                     font-size: 0.75em;
-                    color: #4F4F4F;
+                    color: $header-text-color;
                 }
             }
         }
@@ -257,10 +275,11 @@ main {
             text-align: center;
 
             &__text {
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
                 font-weight: 600;
                 font-size: 0.75em;
-                color: #D96F6E;
+                color: $blush-color;
+                text-decoration: underline;
             }
 
             @media screen and (max-width:414px) and (min-width:412px) {
@@ -326,15 +345,15 @@ main {
             &__text {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                color: #333333;
+                color: $dark-gray-color;
                 font-weight: 800;
                 font-size: 1em;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
 
                 &__link {
                     text-decoration: none;
-                    color: #53889D;
-                    font-family: 'Montserrat', sans-serif;
+                    color: $blue-color;
+                    font-family: $heading-font;
                     font-size: 0.75em;
                     font-weight: 100;
                 }
@@ -366,10 +385,11 @@ main {
                 text-align: center;
 
                 &__text {
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $heading-font;
                     font-weight: 600;
                     font-size: 0.75em;
-                    color: #D96F6E;
+                    color: $blush-color;
+                    text-decoration: underline;
                 }
 
                 &__img {
@@ -393,15 +413,15 @@ main {
             &__text {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                color: #333333;
+                color: $dark-gray-color;
                 font-weight: 800;
                 font-size: 1em;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
 
                 &__link {
                     text-decoration: none;
-                    color: #53889D;
-                    font-family: 'Montserrat', sans-serif;
+                    color: $blue-color;
+                    font-family: $heading-font;
                     font-size: 0.75em;
                     font-weight: 100;
                 }
@@ -433,10 +453,11 @@ main {
                 text-align: center;
 
                 &__text {
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $heading-font;
                     font-weight: 600;
                     font-size: 0.75em;
-                    color: #D96F6E;
+                    color: $blush-color;
+                    text-decoration: underline;
                 }
 
                 @media screen and (max-width:360px) {
@@ -470,15 +491,15 @@ main {
             &__text {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                color: #333333;
+                color: $dark-gray-color;
                 font-weight: 800;
                 font-size: 1em;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
 
                 &__link {
                     text-decoration: none;
-                    color: #53889D;
-                    font-family: 'Montserrat', sans-serif;
+                    color: $blue-color;
+                    font-family: $heading-font;
                     font-size: 0.75em;
                     font-weight: 100;
                 }
@@ -510,10 +531,11 @@ main {
                 text-align: center;
 
                 &__text {
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $heading-font;
                     font-weight: 600;
                     font-size: 0.75em;
-                    color: #D96F6E;
+                    color: $blush-color;
+                    text-decoration: underline;
                 }
 
                 &__img {
@@ -538,15 +560,15 @@ main {
             &__text {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                color: #333333;
+                color: $dark-gray-color;
                 font-weight: 800;
                 font-size: 1em;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
 
                 &__link {
                     text-decoration: none;
-                    color: #53889D;
-                    font-family: 'Montserrat', sans-serif;
+                    color: $blue-color;
+                    font-family: $heading-font;
                     font-size: 0.75em;
                     font-weight: 100;
                 }
@@ -578,10 +600,11 @@ main {
                 text-align: center;
 
                 &__text {
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $heading-font;
                     font-weight: 600;
                     font-size: 0.75em;
-                    color: #D96F6E;
+                    color: $blush-color;
+                    text-decoration: underline;
                 }
 
                 @media screen and (max-width:414px) {
@@ -615,16 +638,16 @@ main {
             &__text {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                color: #333333;
+                color: $dark-gray-color;
                 font-weight: 800;
                 font-size: 1em;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $heading-font;
                 margin-left: 20px;
 
                 &__link {
                     text-decoration: none;
-                    color: #53889D;
-                    font-family: 'Montserrat', sans-serif;
+                    color: $blue-color;
+                    font-family: $heading-font;
                     font-size: 0.75em;
                     font-weight: 100;
                 }
@@ -644,10 +667,10 @@ main {
                 margin-top: 2%;
 
                 &__text {
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $heading-font;
                     font-weight: 600;
                     font-size: 0.75em;
-                    color: #D96F6E;
+                    color: $blush-color;
                     text-decoration: none;
                 }
 

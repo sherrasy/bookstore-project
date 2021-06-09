@@ -1,14 +1,25 @@
+$white-color:#FFFFFF;
+$small-text-color:#4F4F4F;
+$black-color: rgba(0, 0, 0, 1);
+$main-text-font:'Montserrat',
+sans-serif;
+$home-heading-font:'Playfair Display',
+serif;
+
 header {
     display: grid;
     grid-template-rows: 8vh;
     grid-template-columns: 1fr 0.1fr 0.1fr;
     align-items: center;
     box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
+    position: sticky;
+    top: 0;
+    background-color: white;
 
     #header_text {
         font-size: 1em;
-        color: #4F4F4F;
-        font-family: 'Montserrat', sans-serif;
+        color: $small-text-color;
+        font-family: $main-text-font;
         margin-left: 25px;
         grid-row: 1/2;
         grid-column: 1/2;
@@ -17,8 +28,8 @@ header {
     }
 
     button {
-        border-color: white !important;
-        background-color: white !important;
+        border-color: $white-color !important;
+        background-color: $white-color !important;
         border-style: none
     }
 
@@ -37,13 +48,13 @@ header {
     &__title {
         font-size: 1em;
         line-height: 1.15;
-        font-family: 'Playfair Display', serif;
+        font-family: $home-heading-font;
     }
 
     &__text {
         font-size: 0.875em;
         line-height: 1.5;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $main-text-font
     }
 }
 
@@ -51,7 +62,7 @@ header {
     padding: 20px;
 
     &__title {
-        font-family: 'Playfair Display', serif;
+        font-family: $home-heading-font;
     }
 
     &__item {
@@ -66,7 +77,7 @@ header {
     padding: 20px;
 
     &__title {
-        font-family: 'Playfair Display', serif;
+        font-family: $home-heading-font;
     }
 
     &__profiles {
@@ -85,7 +96,7 @@ header {
     &__name {
         font-size: 0.75em;
         line-height: 1.25;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $main-text-font
     }
 }
 
@@ -95,7 +106,7 @@ header {
     padding: 20px;
 
     &__title {
-        font-family: 'Playfair Display', serif;
+        font-family: $home-heading-font;
     }
 
     &__list {
@@ -115,31 +126,26 @@ header {
     &__name {
         font-size: 1em;
         line-height: 1.5;
-        font-family: 'Playfair Display', serif;
+        font-family: $home-heading-font;
     }
 
     &__author {
         font-size: 0.75em;
-        font-family: 'Montserrat', sans-serif;
-        color: #4F4F4F;
+        font-family: $main-text-font;
+        color: $small-text-color;
     }
 }
 
 a {
-    color: #000;
+    color: $black-color;
     text-decoration: none;
-}
-
-a:hover {
-    color: crimson;
-    text-decoration: underline;
 }
 
 .p-genres {
     padding: 20px;
 
     &__title {
-        font-family: 'Playfair Display', serif;
+        font-family: $home-heading-font;
     }
 
     &__items {
@@ -163,7 +169,7 @@ a:hover {
         margin-top: 5px;
         font-size: 0.75em;
         line-height: 1.25;
-        font-family: 'Montserrat', sans-serif;
-        color: #4F4F4F;
+        font-family: $main-text-font;
+        color: $small-text-color;
     }
 }

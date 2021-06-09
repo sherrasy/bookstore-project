@@ -4,12 +4,17 @@ footer {
     justify-content: space-around;
     padding: 3%;
     box-shadow: 0px -4px 16px rgba(78, 55, 55, 0.15);
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+
 }
 
 .footer_link {
     color: #53889D;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.625em;
+    text-decoration: none;
     align-self: center;
 }
 
