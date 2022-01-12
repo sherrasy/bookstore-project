@@ -1,1 +1,3 @@
-# f6_team3_project1
+Mobile bookstore project
+
+https://sherrasy.github.io/bookstore-project/home_page.html
